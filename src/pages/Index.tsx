@@ -17,6 +17,8 @@ interface StaffMember {
   available: boolean;
 }
 
+const BOOKING_URL = 'https://yclients.com/';
+
 const staffMembers: StaffMember[] = [
   {
     id: 1,
@@ -117,7 +119,10 @@ export default function Index() {
             <a href="#gallery" className="text-sm font-medium hover:text-primary transition-colors">Галерея</a>
             <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700">
+          <Button 
+            className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700"
+            onClick={() => window.open(BOOKING_URL, '_blank')}
+          >
             Записаться
           </Button>
         </div>
@@ -137,7 +142,11 @@ export default function Index() {
               Премиальная студия красоты с командой из 7 мастеров высшего класса
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-lg px-8">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-lg px-8"
+                onClick={() => window.open(BOOKING_URL, '_blank')}
+              >
                 <Icon name="Calendar" className="mr-2" size={20} />
                 Записаться онлайн
               </Button>
@@ -242,6 +251,7 @@ export default function Index() {
                     className="w-full mt-4 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700"
                     onClick={(e) => {
                       e.stopPropagation();
+                      window.open(BOOKING_URL, '_blank');
                     }}
                   >
                     <Icon name="Calendar" className="mr-2" size={16} />
@@ -325,6 +335,7 @@ export default function Index() {
                 size="lg" 
                 variant="secondary" 
                 className="bg-white text-primary hover:bg-white/90 text-lg px-8"
+                onClick={() => window.open(BOOKING_URL, '_blank')}
               >
                 <Icon name="Calendar" className="mr-2" size={20} />
                 Записаться сейчас
