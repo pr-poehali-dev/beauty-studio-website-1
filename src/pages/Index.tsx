@@ -98,9 +98,7 @@ const services = [
   { icon: 'Scissors', title: 'Стрижки и укладки', description: 'Профессиональные услуги парикмахера' },
   { icon: 'Sparkles', title: 'Окрашивание', description: 'Все виды окрашивания волос' },
   { icon: 'Hand', title: 'Маникюр и педикюр', description: 'Nail-дизайн любой сложности' },
-  { icon: 'Star', title: 'Макияж', description: 'Дневной и вечерний макияж' },
-  { icon: 'Heart', title: 'Косметология', description: 'Уход за лицом и телом' },
-  { icon: 'Flower2', title: 'SPA-процедуры', description: 'Массаж и релаксация' }
+  { icon: 'Star', title: 'Макияж', description: 'Дневной и вечерний макияж' }
 ];
 
 export default function Index() {
