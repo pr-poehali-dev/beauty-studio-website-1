@@ -17,7 +17,7 @@ interface StaffMember {
   available: boolean;
 }
 
-const BOOKING_URL = 'https://yclients.com/';
+const BOOKING_URL = 'https://n1725834.yclients.com';
 
 const staffMembers: StaffMember[] = [
   {
